@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body{
-  background: linear-gradient(90deg, rgba(136,209,183,1) 0%, rgba(113,172,184,1) 100%);
+  background: linear-gradient(90deg, rgba(136,209,183,1) 0%, rgb(6, 61, 72) 100%);
 }
 .App{
   height: 100vh;
