@@ -1,0 +1,61 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(90deg, rgba(136,209,183,1) 0%, rgba(113,172,184,1) 100%);
+}
+.App{
+  height: 100vh;
+  width: 100%;
+}
+
+.contenedor_cal{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 80vh;
+  grid-template-columns: repeat(4,80px);
+  grid-template-rows: minmax(80px, auto) repeat(5,80px);
+
+}
+
+.contenedor_cal > button{
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  border: 1px solid white;
+  outline: none;
+  background-color: #71acb8;
+  margin: 3px;
+}
+
+.contenedor_cal > button:hover{
+  background-color: #88d1b7;
+}
+.span_two{
+  grid-column: span 2;
+}
+.out_input{
+  grid-column: 1/-1;
+  margin-botton: .5rem;
+  background-color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.out_input .input_arriba{
+  color: black;
+  font-size: 1.5rem;
+}
+.out_input .input_abajo{
+  color: green;
+  font-size: 2.5rem;
+}
